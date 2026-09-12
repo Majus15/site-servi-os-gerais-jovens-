@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog TechGames</title>
+    <style>
+        header{
+            background-color: rgb(0, 255, 162);
+            color: rgb(67, 53, 123);
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        main{
+            background-color: rgb(255, 194, 125);
+            color:black;
+            margin: auto;
+            padding: 15px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        .direitos{
+            text-align: center;
+            color: darkblue;
+        }
+        .artigo{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog TechGames</h1>
+        <p>Tecnologia, Games e Eletrônica</p>
+    </header>
+    
+    <main>
+        <article>
+            <img src="primeiro.png">
+            <div>
+                <h2>Top 5 - 16 bits Games</h2>
+                <p class="artigo">Por: Rodrigo Mendes</p>
+                <ul>
+                    <li>1º - Super Metroid - SNES</li>
+                    <li>2º - Landstalker - Mega Drive</li>
+                    <li>3º - Chrono Trigger - SNES</li>
+                    <li>4º - Castlevania - Rondo of Blood - PC Engine</li>
+                    <li>5º - Beyond Oasis - Mega Drive</li>
+                </ul>
+                <button>👍<span>0</span></button>
+                <button>💩<span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="segundo.png">
+            <div>
+                <h2>Modificações de vídeo games antigos</h2>
+                <p class="artigo">Por: Rodrigo Mendes</p>
+                <p>Existem modificações em consoles antigos que melhoram resolução
+                   da época para que funcione em TV's modernas como modHDMI, Scart
+                   e Bypass. Também existem aparrelhos chamados de <b>escalonadores</b>
+                   e <b>multiplicadores de linhas</b>que convertem resoluções baixas (144p, 240p, 360p) em alta resolução
+                   (760p, 1080i e 1080p) como GBS Control e OSSC e até em 4K como RetroTink.
+                </p>
+                <button>👍<span>0</span></button>
+                <button>💩<span>0</span></button>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p class="direitos">Todos os direitos estão reservados ao autor.</p>
+    </footer>
+
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true;
+            } else {
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    });
+</script>
+</html>
