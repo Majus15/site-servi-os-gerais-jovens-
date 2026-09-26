@@ -3,41 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços Locais</title>
+    <title>Plataforma de Serviços Locais</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Tela de Cadastro -->
+<div id="cadastro">
+
+    <h1>Bem-vindo à Plataforma de Serviços Locais</h1>
+
+    <p>Cadastre-se para encontrar profissionais próximos de você.</p>
+
+    <input type="text" id="nome" placeholder="Nome Completo">
+
+    <input type="tel" id="telefone" placeholder="Telefone">
+
+    <input type="text" id="cidade" placeholder="Cidade">
+
+    <input type="text" id="endereco" placeholder="Endereço">
+
+    <br>
+
+    <button onclick="entrar()">Entrar</button>
+
+</div>
+
+<!-- Página Principal -->
+<div id="site" style="display:none;">
+
 <header>
-    <h1>Plataforma de Serviços Locais</h1>
-    <p>Encontre profissionais perto de você.</p>
+
+<h1>Plataforma de Serviços Locais</h1>
+
+<p>📞 Central de Atendimento</p>
+
+<p>(44) 99999-1234</p>
+
+<p>📍 Localização do cliente:</p>
+
+<p>Rua das Palmeiras, 250 - Centro</p>
+
 </header>
 
 <section class="container">
-    <div class="card">
-        <h2>Eletricista</h2>
-        <p>João Silva</p>
-        <button onclick="contratar('Eletricista')">Contratar</button>
-    </div>
 
-    <div class="card">
-        <h2>Manicure</h2>
-        <p>Ana Souza</p>
-        <button onclick="contratar('Manicure')">Contratar</button>
-    </div>
+<div class="card">
 
-    <div class="card">
-        <h2>Professor Particular</h2>
-        <p>Lucas Santos</p>
-        <button onclick="contratar('Professor')">Contratar</button>
-    </div>
+<img src="https://i.pravatar.cc/150?img=12">
 
-    <div class="card">
-        <h2>Técnico em Informática</h2>
-        <p>Carlos Oliveira</p>
-        <button onclick="contratar('Técnico')">Contratar</button>
-    </div>
+<h2>João Silva</h2>
+
+<p>🔌 Eletricista</p>
+
+<p>📞 (44) 98888-1111</p>
+
+<p>📍 1,3 km de você</p>
+
+<button onclick="contratar('João Silva')">Contratar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://i.pravatar.cc/150?img=32">
+
+<h2>Ana Souza</h2>
+
+<p>💅 Manicure</p>
+
+<p>📞 (44) 97777-2222</p>
+
+<p>📍 800 metros de você</p>
+
+<button onclick="contratar('Ana Souza')">Contratar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://i.pravatar.cc/150?img=21">
+
+<h2>Lucas Santos</h2>
+
+<p>📚 Professor Particular</p>
+
+<p>📞 (44) 96666-3333</p>
+
+<p>📍 2 km de você</p>
+
+<button onclick="contratar('Lucas Santos')">Contratar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://i.pravatar.cc/150?img=54">
+
+<h2>Carlos Oliveira</h2>
+
+<p>💻 Técnico em Informática</p>
+
+<p>📞 (44) 95555-4444</p>
+
+<p>📍 1,8 km de você</p>
+
+<button onclick="contratar('Carlos Oliveira')">Contratar</button>
+
+</div>
+
 </section>
+
+</div>
 
 <script src="script.js"></script>
 
